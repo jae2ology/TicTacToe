@@ -23,7 +23,18 @@ public partial class Form1 : Form
 
     private void CPUmove(object sender, EventArgs e)
     {
-        
+        if (buttons.Count > 0)
+        {
+            int index = random.Next(buttons.Count); // select a random number between the buttons in the list
+            buttons[index].Enabled = false;
+            currentPlayer = Player.O; // the CPU can only use Os
+            buttons[index].Text = currentPlayer.ToString(); 
+            buttons[index].BackColor = Color.DarkOliveGreen;
+            buttons.RemoveAt(index); // remove the current button the CPU used
+            
+            CheckGame(); // check who won
+            timer1.Stop(); // stop the timer
+        }
     }
 
     private void PlayerClickButton(object sender, EventArgs e)
