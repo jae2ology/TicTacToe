@@ -19,6 +19,7 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         RestartGame();
+        
     }
 
     private void CPUmove(object sender, EventArgs e)
