@@ -156,7 +156,7 @@ partial class Form1
         button6.Name = "button6";
         button6.Size = new System.Drawing.Size(187, 149);
         button6.TabIndex = 6;
-        button6.Text = "?";
+        button6.Text = "e";
         button6.UseVisualStyleBackColor = true;
         button6.Click += PlayerClickButton;
         // 
@@ -170,7 +170,7 @@ partial class Form1
         button7.Name = "button7";
         button7.Size = new System.Drawing.Size(192, 149);
         button7.TabIndex = 11;
-        button7.Text = "?";
+        button7.Text = "me lol";
         button7.UseVisualStyleBackColor = false;
         button7.Click += PlayerClickButton;
         // 
