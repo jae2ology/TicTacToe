@@ -139,7 +139,7 @@ partial class Form1
         button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
         button5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
         button5.ForeColor = System.Drawing.SystemColors.ControlText;
-        button5.Location = new System.Drawing.Point(315, 272);
+        button5.Location = new System.Drawing.Point(314, 272);
         button5.Name = "button5";
         button5.Size = new System.Drawing.Size(181, 149);
         button5.TabIndex = 7;

@@ -59,8 +59,35 @@ public partial class Form1 : Form
 
     private void CheckGame()
     {
-        
-    }
+        // goal is to check every winning combination between Xs and Os 
+        // O as in O not zero (0)......
+
+        if (button1.Text == "X" && button2.Text == "X" && button3.Text == "X"|| button1.Text == "X" && button6.Text == "X" && button9.Text == "X" ||
+            button9.Text == "X" && button8.Text == "X" && button7.Text == "X" || button3.Text == "X" && button4.Text == "X" && button7.Text == "X" ||
+            button2.Text == "X" && button5.Text == "X" && button8.Text == "X" || button1.Text == "X" && button5.Text == "X" && button7.Text == "X" ||
+            button9.Text == "X" && button5.Text == "X" && button3.Text == "X" || button6.Text == "X" && button5.Text == "X" && button4.Text == "X"
+            
+            )
+        {
+            timer1.Stop();
+            MessageBox.Show("Player Wins!!!");
+            playerWinCount++;
+            label2.Text = "Player Wins: " + playerWinCount;
+            RestartGame();
+        }
+
+        else if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O"|| button1.Text == "O" && button6.Text == "O" && button9.Text == "O" ||
+                 button9.Text == "O" && button8.Text == "O" && button7.Text == "O" || button3.Text == "O" && button4.Text == "O" && button7.Text == "O" ||
+                 button2.Text == "O" && button5.Text == "O" && button8.Text == "O" || button1.Text == "O" && button5.Text == "O" && button7.Text == "O" ||
+                 button9.Text == "O" && button5.Text == "O" && button3.Text == "O" || button6.Text == "O" && button5.Text == "O" && button4.Text == "O")
+        {
+            timer1.Stop();
+            CPUWinCount++;
+            MessageBox.Show("CPU Wins!");
+            label3.Text = "CPU Wins: " + CPUWinCount;
+            RestartGame();
+        }
+}
 
     private void RestartGame()
     {
