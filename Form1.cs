@@ -10,8 +10,8 @@ public partial class Form1 : Form
 
     private Player currentPlayer;
     private Random random = new Random();
-    private int playerWinCount = 0;
-    private int CPUWinCount = 0;
+    public int playerWinCount = 0;
+    public int CPUWinCount = 0;
 
     private List<Button> buttons;
     
@@ -82,8 +82,8 @@ public partial class Form1 : Form
                  button9.Text == "O" && button5.Text == "O" && button3.Text == "O" || button6.Text == "O" && button5.Text == "O" && button4.Text == "O")
         {
             timer1.Stop();
-            CPUWinCount++;
             MessageBox.Show("CPU Wins!");
+            CPUWinCount++;
             label3.Text = "CPU Wins: " + CPUWinCount;
             RestartGame();
         }

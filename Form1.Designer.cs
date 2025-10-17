@@ -66,7 +66,7 @@ partial class Form1
         label2.ForeColor = System.Drawing.Color.LimeGreen;
         label2.Location = new System.Drawing.Point(1, 9);
         label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(133, 27);
+        label2.Size = new System.Drawing.Size(182, 27);
         label2.TabIndex = 1;
         label2.Text = "Player Wins: ";
         // 
@@ -74,9 +74,9 @@ partial class Form1
         // 
         label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline)));
         label3.ForeColor = System.Drawing.Color.Maroon;
-        label3.Location = new System.Drawing.Point(663, 7);
+        label3.Location = new System.Drawing.Point(648, 7);
         label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(125, 27);
+        label3.Size = new System.Drawing.Size(153, 27);
         label3.TabIndex = 2;
         label3.Text = "CPU Wins:";
         // 
