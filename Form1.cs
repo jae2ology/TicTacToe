@@ -23,7 +23,7 @@ public partial class Form1 : Form
 
     private void CPUmove(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     private void PlayerClickButton(object sender, EventArgs e)
@@ -34,12 +34,16 @@ public partial class Form1 : Form
         button.Text = currentPlayer.ToString();
         button.Enabled = false; // disables the button after the first press
         button.BackColor = Color.IndianRed; // changes the pressed button's color to red
+        buttons.Remove(button); // remove the player's chosen button from the list
+        CheckGame();
         
+        timer1.Start(); // timer for the CPU
+
     }
 
     private void RestartGame(object sender, EventArgs e)
     {
-        
+        RestartGame();
     }
 
     private void CheckGame()
